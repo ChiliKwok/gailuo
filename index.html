@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toodles Galore | 赛博大唐公民通行证</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Noto+Serif+SC:wght@400;700&display=swap">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'tang-bg': '#050205',
+              'tang-main': '#f5c2fd',
+              'tang-dim': '#df85a9',
+              'tang-gold': '#f193e8',
+              'tang-purple': '#9D86E9',
+              'tang-red': '#ff4081',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', '"Noto Serif SC"', 'serif'],
+              cinzel: ['"Cinzel"', 'serif'],
+              sans: ['"Microsoft YaHei"', 'sans-serif'],
+            },
+            backgroundImage: {
+              'gold-gradient': 'linear-gradient(45deg, #e674c6, #d34fa2, #b02b8b, #d06adc, #f6d8ee)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+            --cursor-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAYAAAAfrhY5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA0NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAzIDc5Ljk2OTBhODdmYywgMjAyNS8wMy8wNi0yMDo1MDoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDI3LjEgKDIwMjUxMTAxLm0uMzI3OSBiMWE2MzJlKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzA3MTU5Q0VDNTZDMTFGMEE4MTdBODZERURGRDAzNTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzA3MTU5Q0ZDNTZDMTFGMEE4MTdBODZERURGRDAzNTUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3MDcxNTlDQ0M1NkMxMUYwQTgxN0E4NkRFREZEMDM1NSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3MDcxNTlDREM1NkMxMUYwQTgxN0E4NkRFREZEMDM1NSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFj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'),auto;
+    }
+        /* 
+           ⚠️ 1. REPLACE CURSOR BASE64 HERE 
+           Paste your base64 string inside the url('') parentheses.
+           Example: url('data:image/png;base64,YOUR_CODE_HERE'), auto;
+        */
+
+      body {
+        background-color: #050205;
+        color: #f5c2fd;
+        margin: 0;
+        overflow: hidden; /* App handles scroll */
+        cursor: var(--cursor-image) !important;
+      }
+      
+      /* Force custom cursor on interactive elements */
+      a, button, input, [role="button"], .cursor-pointer {
+        cursor: var(--cursor-image) !important;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-thumb { background: #9D86E9; border-radius: 2px; }
+      ::-webkit-scrollbar-track { background: #000; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
