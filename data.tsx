@@ -43,7 +43,7 @@ export const SECTIONS: SectionData[] = [
           朱雀传书 <Var>发信人</Var>to<Var>收信人</Var><br/>
           发信人：<Var>署名(可匿名)</Var><br/>
           收信人：<Var>对方称呼(可匿名)</Var><br/>
-          传递媒介：<Var>物品描述</Var><br/>
+          传递方式：<Var>物品描述</Var><br/>
           内容：<Var>正文(支持图片)</Var>
         </>} />
 
